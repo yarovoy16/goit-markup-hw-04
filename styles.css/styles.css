@@ -167,7 +167,7 @@ img{
   clip: rect(0 0 0 0);
 
 }
-.flex-container-advantage{
+.flex-list-advantage{
   display: flex;
   flex-wrap: wrap;
 
@@ -181,6 +181,31 @@ img{
 .section-advantage{
   padding-top: 94px;
 }
+.element-advantage::before{
+  display: flex;
+  content: "";
+  height: 112px;
+  width: 264px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--CLOUD);
+  border-radius: 4px;
+
+}
+
+
+/* .antenna::before{
+  background-image: url(../images/Client1.svg);
+}
+.clock::before{
+  background-image: url(../images/clock1.svg);
+}
+.diagram::before{
+  background-image: url(../images/diagram1.svg);
+}
+.astronaut::before{
+  background-image: url(../images/astronaut1.svg);
+} */
 
 
 .second-title {
@@ -245,7 +270,6 @@ img{
   background-color: #fff;
 }
 
-
 .socials{
   display: flex;
   flex-wrap: wrap;
@@ -262,30 +286,25 @@ img{
   padding-bottom: 32px;
 }
 
-/* Test */
-.social-test-sprite{
-  width: 60px;
-  height: 60px;
-  outline: 1px solid red;
-  background-color: teal;
-  border-radius: 20%;
-  display: block;
+.socials-icon{
+  width: 20px;
+  height: 20px;
+  fill:#FFF;
 }
-.svg-twitter{
-  width: 40px;
-  height: 40px;
-  fill: black;
-  stroke: #2196F3;
+.link-icon{
+  width: 44px;
+  height: 44px;
+  background-color: var(--Iris);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-icon:hover{
+  background-color: var(--Ocean);
+}
 
-}
-/* Test2 */
-.social-test-inline{
-  width: 60px;
-  height: 60px;
-  outline: 1px solid red;
-  background-color: teal;
-  border-radius: 20%;
-}
+
 
 /* Customers */
 .flex-customers{
@@ -339,15 +358,18 @@ img{
 .footer-box2{
   margin-left: 120px;
 }
-.footer-box3{
+/* .footer-box3{
   margin-left: 80px;
-}
+} */
 .links-footer{
   display: flex;
   flex-wrap:wrap;
 }
 .links-footer li:not(:last-child){
   margin-right: 16px;
+}
+.icon-footer{
+  background-color:var()
 }
 
 
