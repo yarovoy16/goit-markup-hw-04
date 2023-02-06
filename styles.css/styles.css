@@ -268,6 +268,8 @@ img{
   height: 60px;
   outline: 1px solid red;
   background-color: teal;
+  border-radius: 20%;
+  display: block;
 }
 .svg-twitter{
   width: 40px;
@@ -275,6 +277,14 @@ img{
   fill: black;
   stroke: #2196F3;
 
+}
+/* Test2 */
+.social-test-inline{
+  width: 60px;
+  height: 60px;
+  outline: 1px solid red;
+  background-color: teal;
+  border-radius: 20%;
 }
 
 /* Customers */
