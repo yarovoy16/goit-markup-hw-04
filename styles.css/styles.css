@@ -190,22 +190,23 @@ img{
   background-position: center;
   background-color: var(--CLOUD);
   border-radius: 4px;
+  background-size: 64px 64px;
+  margin-bottom: 8px;
 
 }
 
-
-/* .antenna::before{
-  background-image: url(../images/Client1.svg);
+.antenna::before{
+  background-image: url(../images/SVG/antenna.svg);
 }
 .clock::before{
-  background-image: url(../images/clock1.svg);
+  background-image: url(../images/SVG/clock.svg);
 }
 .diagram::before{
-  background-image: url(../images/diagram1.svg);
+  background-image: url(../images/SVG/diagram.svg);
 }
 .astronaut::before{
-  background-image: url(../images/astronaut1.svg);
-} */
+  background-image: url(../images/SVG/astronaut.svg);
+} 
 
 
 .second-title {
@@ -289,7 +290,7 @@ img{
 .socials-icon{
   width: 20px;
   height: 20px;
-  fill:#FFF;
+  fill:var(--CLOUD);
 }
 .link-icon{
   width: 44px;
@@ -314,6 +315,27 @@ img{
 
 .flex-customers li:not(:last-child){
   margin-right: 24px;
+}
+.customers-bg{
+  width: 168px;
+  height: 88px;
+  background-color: #fff;
+  color: var(--LIGHTSLATE);
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+}
+.icon-customers{
+  width: 104px;
+  height: 56px;
+  fill:currentColor;
+}
+.customers-bg:hover{
+  color: var(--Ocean);
+  border: 1px solid var(--Ocean);
 }
 
 /* Footer */
@@ -368,10 +390,12 @@ img{
 .links-footer li:not(:last-child){
   margin-right: 16px;
 }
-.icon-footer{
-  background-color:var()
+.bg-footer-icon{
+  background-color: rgba(255, 255, 255, 0.1);
 }
-
+.bg-footer-icon:hover{
+  background-color: var(--GREEN);
+}
 
 
 /* Potfolio */
