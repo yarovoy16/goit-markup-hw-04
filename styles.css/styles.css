@@ -123,6 +123,8 @@ img{
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid black;
+  background-image: url(../images/SVG/Dark-bg.svg), 
+  url(../images/people-office1.jpg);
 }
 
 
@@ -170,31 +172,34 @@ img{
 .flex-list-advantage{
   display: flex;
   flex-wrap: wrap;
-
 }
-.element-advantage{
+.box-adv{
   width: calc((100% - 72px)/4);
 }
-.element-advantage:not(:last-child){
+.box-adv:not(:last-child){
   margin-right: 24px;
 }
-.section-advantage{
-  padding-top: 94px;
-}
-.element-advantage::before{
+
+.element-advantage{
   display: flex;
-  content: "";
   height: 112px;
   width: 264px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: var(--CLOUD);
   border-radius: 4px;
-  background-size: 64px 64px;
   margin-bottom: 8px;
+  justify-content: center;
+  align-items: center;
 
 }
-
+.icon-adv{
+  width: 64px;
+  height: 64px;
+  fill: var(--NAVY-BLUE);
+}
+.box-adv{
+  width: 264px;
+}
+/* 
 .antenna::before{
   background-image: url(../images/SVG/antenna.svg);
 }
@@ -206,7 +211,7 @@ img{
 }
 .astronaut::before{
   background-image: url(../images/SVG/astronaut.svg);
-} 
+}  */
 
 
 .second-title {
@@ -458,7 +463,10 @@ img{
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   background: #FFF;
   width: calc((100% - 2 * 24px)/3);
-
+}
+.examples-item:hover{
+  border: 0.5px solid #F4F4FD;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .examples-item:nth-last-child(-n+3){
   margin-bottom: 0px;
